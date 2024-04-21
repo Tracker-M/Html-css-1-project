@@ -1,0 +1,132 @@
+/* body reset  */
+body {
+    margin: 0;
+    padding: 0;
+
+    /* flex,center. */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    background-image: url(img.jpg);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+h1 {
+    position: absolute;
+    top: 76px;
+    color: #d14f3e;
+    align-self: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 57%;
+    width: 33%;
+    border: 1px solid black;
+    background-color: rgb(217, 217, 217);
+    border-radius: 10px;
+    border: none;
+    border-bottom: 10px solid #f64227;
+    box-shadow: 2px 3px 10px rgb(0 0 0 / 62%)
+}
+
+#container form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    border: none;
+}
+
+#container form input{
+    
+    
+    padding-left: 18px;
+}
+
+#container form .input_text_pass {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 43px;
+    /* position: relative;
+    left: 10px;*/
+    /* margin-top: 19px;  */
+    margin-top: 9px;
+    align-self: center;
+    border-radius: 30px;
+    background-color: #ffffff;
+    border: none;
+    
+}
+
+.input_text_pass::placeholder{
+    
+    color: rgba(0, 0, 0, 0.427);
+    padding-left: 10px;
+    text-align: start;
+    
+}
+
+#container form .lable {
+    /* position: relative;
+        top: 17px;
+        left: 13px; */
+    align-self: flex-start;
+    margin-left: 47px;
+    margin-top: 28px;
+}
+
+#container form .checkbox {
+    /* position: relative;
+    left: 13px; */
+    padding-left: 47px;
+}
+
+#container form .btn {
+    align-self: center;
+    width: 80%;
+    height: 43px;
+    border-radius: 30px;
+    background-color: #f64227;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#container form .anchortag {
+    border: 1px solid;
+    height: 100px;
+    width: 100%;
+    margin-top: 28px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    border: none;
+    overflow: hidden;
+    border-radius: 0 0 5px 0;
+    /* z-index: -1; */
+}
+
+#container form .anchortag a {
+    display: inline-flex;
+    color: #f64227;
+    text-decoration: none;
+}
